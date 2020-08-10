@@ -9,7 +9,7 @@
         <img class="thumbnail" src="{{ p.imageUrl }}" width="350" height="200">
         <div class="box-element product">
             <h6><strong>{{ p.name }}</strong></h6><hr>
-            <button class="btn btn-outline-secondary add-btn">Add to cart</button>
+            <button data-product="{{ p.id }}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to cart</button>
             <a class="btn btn-outline-success" href="">View</a>
             <h4 style="display: inline-block; float: right"><strong>${{ p.price }}</strong></h4>
 
@@ -17,24 +17,6 @@
     </div>
     {% endfor %}
 
-{#        <div class="col-lg-4">#}
-{#            <img src="{% static 'images/place.png' %}" width="350" height="200">#}
-{#        <div class="box-element product">#}
-{#            <h6><strong>Product</strong></h6><hr>#}
-{#            <button class="btn btn-outline-secondary add-btn">Add to cart</button>#}
-{#            <h4 style="display: inline-block; float: right"><strong>$20</strong></h4>#}
-{##}
-{#        </div>#}
-{#    </div>#}
-{##}
-{#        <div class="col-lg-4">#}
-{#            <img src="{% static 'images/place.png' %}" width="350" height="200">#}
-{#        <div class="box-element product">#}
-{#            <h6><strong>Product</strong></h6><hr>#}
-{#            <button class="btn btn-outline-secondary add-btn">Add to cart</button>#}
-{##}
-{##}
-{#        </div>#}
-{#    </div>#}
+
     </div>
 {% endblock %}
